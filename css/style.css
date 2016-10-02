@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body{
+	font-family:"Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif";
+	font-size:13px;
+	line-height:1.5em;
+	color:#fff;
+	background: url(../img/bg.png);
+}
+
+.clearfix{
+	clear:both;
+}
+
+#container{
+	width:330px;
+	min-height:400px;
+	background:#333;
+	overflow:auto;
+	margin:60px auto;
+	border-radius:10px;
+	border:#666 solid 2px;
+}
+
+#audio-image{
+	position:relative;
+	overflow:hidden;
+	height:200px;
+	margin-bottom:10px;
+}
+
+#audio-info{
+	text-align:center;
+	margin-bottom: 10px;
+}
+
+#audio-info .artist{
+	font-weight:bold;
+}
+
+.cover{
+	width:100%;
+	height: 100%;
+	z-index:1;
+}
+
+input{
+	width:95%;
+	margin-left:2%;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    background:#ccc;
+    height:1px;
+	margin-bottom:20px;
+}
+
+input::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background:url(../img/knob.png) no-repeat;
+    height:12px;
+    width:12px;
+}
+
+input::-moz-range-thumb {
+    -moz-appearance: none !important;
+    background:url(../img/knob.png) no-repeat;
+    height:12px;
+    width:12px;
+}
+
+#buttons{
+	width:90%;
+	display: block;
+    margin: 15px auto;
+	margin-left:23px;
+	overflow:auto;
+}
+
+button#play{
+	width:70px;
+	height:70px;
+	background:url(../img/play.png) no-repeat;
+	float:left;
+}
+
+button#pause{
+	width:70px;
+	height:70px;
+	background:url(../img/pause.png) no-repeat;
+	float:left;
+}
+
+button#stop{
+	width:70px;
+	height:70px;
+	background:url(../img/stop.png) no-repeat;
+	float:left;
+}
+
+button#prev{
+	width:70px;
+	height:70px;
+	background:url(../img/prev.png) no-repeat;
+	float:left;
+	margin-top:15px;
+}
+
+button#next{
+	width:70px;
+	height:70px;
+	background:url(../img/next.png) no-repeat;
+	float:right;
+	margin-top:15px;
+}
+
+#playlist {
+    list-style-type: none;
+	padding:10px;
+}
+
+#playlist li {
+    cursor: pointer;
+    margin:5px;
+}
+
+#tracker{
+	width:100%;
+}
+
+#playlist li.active {
+    font-weight: bold;
+	padding:3px;
+	background:#666;
+}
+
+#curtimetext {
+	margin-left: 35%;
+	padding:4px 8px;
+	background:#000;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+}
+
+#durtimetext {
+	padding:4px 8px;
+	background:#000;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+}
+
+#curdur {
+	padding:4px 8px;
+	background:#000;
+}
+
